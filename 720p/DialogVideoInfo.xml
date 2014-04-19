@@ -678,6 +678,14 @@
 					<alttexturefocus>-</alttexturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
 				</control>
+				<control type="button" id="49">
+					 <description>Home Theatre</description>
+					 <include>ButtonInfoDialogsCommonValues</include>
+					 <label>Cinema</label>
+					 <onclick>Dialog.Close(MovieInformation)</onclick>
+					 <onclick>XBMC.RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])</onclick>
+					 <visible>system.hasaddon(script.cinema.experience) + Container.Content(movies)</visible>
+				</control>
 				<control type="button" id="5">
 					<description>Cast/Plot</description>
 					<label>-</label>
@@ -757,6 +765,13 @@
           <label>$INFO[Control.GetLabel(8)]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(8)" reversible="true">Conditional</animation>
           <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(8)" reversible="true">Conditional</animation>
+				</control>
+					<control type="label">
+					<description>Cinema Experience</description>
+					<include>TopSmallLabel</include>
+					<label>Cinema</label>
+					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(49)" reversible="true">Conditional</animation>
+					<animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(49)" reversible="true">Conditional</animation>
 				</control>
 				<control type="label">
 					<description>Cast/Plot</description>

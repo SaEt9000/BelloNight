@@ -44,7 +44,7 @@
 			<visible>Skin.HasSetting(HomeMenuAnimation)</visible>
       <visible>Window.IsVisible(Home) + ![Skin.HasSetting(CustomBackground) + !IsEmpty(Skin.String(CustomImageBackgroundPath))]</visible>
       <visible>Window.IsVisible(Home) + ![Skin.HasSetting(CustomBackground) + ![IsEmpty(Skin.String(CustomFolderBackgroundPath)) | Skin.HasSetting(ShowCustomBackgroundOnHomeOnly)]]</visible>
-      <control type="image">
+      <!-- <control type="image">
         <include>FullscreenDimensions</include>
         <texture>windows/bg/bokeh1.png</texture>
         <animation type="Conditional" condition="true" pulse="true" reversible="false">
@@ -64,7 +64,7 @@
         <animation type="Conditional" condition="true" pulse="true" reversible="false">
           <effect type="fade" start="0" end="70" time="10350" delay="20700"/>
         </animation>
-      </control>
+      </control -->
     </control>
 		<control type="image">
 			<description>Custom Background Image</description>

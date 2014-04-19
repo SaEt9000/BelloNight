@@ -10,23 +10,23 @@
 		      <include>HomeSlideAnimations</include>
 				  <control type="image">
 		        <include>FullscreenDimensions</include>
-						<texture background="true">windows/bg/colors_pulse.png</texture>
-						<visible>!Skin.HasSetting(HomeMenuAnimation)</visible>
+						<!--<texture background="true">windows/bg/colors_pulse.png</texture>
+						<visible>!Skin.HasSetting(HomeMenuAnimation)</visible> -->
 					</control>
           <control type="image">
             <height>720</height>
             <width>3280</width>
-            <texture>windows/bg/colors_pulse.png</texture>
+            <!--<texture>windows/bg/colors_pulse.png</texture>
             <animation type="Conditional" condition="true" loop="true" reversible="false">
 	            <effect type="slide" start="0,0" end="-2000,0" time="20350" />
 	            <effect type="slide" start="0,0" end="2000,0" time="20350" delay="20350"/>
             </animation>
-						<visible>Skin.HasSetting(HomeMenuAnimation)</visible>
+						<visible>Skin.HasSetting(HomeMenuAnimation)</visible>-->
           </control>					
 					<control type="wraplist" id="20">
 					 <description>Home Container</description>
 					 <posx>-95</posx>
-					 <posy>110</posy>
+					 <posy>400</posy>
 					 <width>1500</width>
 					 <height>720</height>
 					 <align>center</align>

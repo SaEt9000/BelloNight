@@ -6,7 +6,7 @@
 		<include>BackgroundContent</include>
 		<!-- <include>HomeBackground</include> -->
 		<include>RecentAndSkinWidgetsFanart</include>
-		<include>BackgroundVignette</include>
+		<!--<include>BackgroundVignette</include>-->
 		<!-- Main Home Menu Wraplist -->
 		<include>HomeMenuWraplist</include>
 	  <!-- Home Now Playing -->
