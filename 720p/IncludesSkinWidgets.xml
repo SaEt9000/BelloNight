@@ -1,4 +1,5 @@
-<includes>
+<?xml version="1.0" encoding="UTF-8"?>
+<includes> 
 
 	<include name="ContentSkinWidgetsInfo">
 	 <control type="group">
@@ -8,11 +9,11 @@
 	      <effect type="fade" start="100" end="0" time="250" delay="250" tween="sine" easing="out" />
 	      <effect type="slide" start="0,0" end="0,-55" time="300" delay="250" tween="sine" easing="out" />
 	    </animation>
-	    <animation type="Conditional" reversible="false" condition="![Window.IsActive(ShutdownMenu) | Window.IsActive(ContextMenu)]">
+	    <animation type="Conditional" reversible="false" condition="![Window.IsActive(ShutdownMenu) | Window.IsActive(ContextMenu) | Window.IsActive(Favourites)]">
 	      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
 	      <effect type="slide" start="0,55" end="0,0" time="350" tween="cubic" easing="out" />
 	    </animation>
-	    <animation type="Conditional" reversible="false" condition="Window.IsActive(ShutdownMenu) | Window.IsActive(ContextMenu)">
+	    <animation type="Conditional" reversible="false" condition="Window.IsActive(ShutdownMenu) | Window.IsActive(ContextMenu) | Window.IsActive(Favourites)">
 	      <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
 	      <effect type="slide" start="0,0" end="0,55" time="350" tween="sine" easing="out" />
 	    </animation>
@@ -162,11 +163,11 @@
       <effect type="fade" start="100" end="0" time="250" delay="250" tween="sine" easing="out" />
       <effect type="slide" start="0,0" end="0,-55" time="300" delay="250" tween="sine" easing="out" />
     </animation>
-    <animation type="Conditional" reversible="false" condition="![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(PlayerControls)]">
+    <animation type="Conditional" reversible="false" condition="![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites)]">
       <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
       <effect type="slide" start="0,55" end="0,0" time="350" tween="cubic" easing="out" />
     </animation>
-    <animation type="Conditional" reversible="false" condition="Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(PlayerControls)">
+    <animation type="Conditional" reversible="false" condition="Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites)">
       <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
       <effect type="slide" start="0,0" end="0,55" time="350" tween="sine" easing="out" />
     </animation>
@@ -655,7 +656,7 @@
 			 </control>
 			</focusedlayout>
       <content>
-        <include>MyRecentlyAddedMediaContent</include>
+        <include>MyLatestMediaContent</include>
       </content>
 		</control>
 
@@ -1458,6 +1459,7 @@
 	 </control>
 	</include>
 
+<<<<<<< HEAD
 	<include name="HomeSubMenusArrows">
 	 <control type="group">
 		<posx>620</posx>
@@ -1494,4 +1496,6 @@
 		</control>
 	 </control>
   </include>
+=======
+>>>>>>> upstream/master
 </includes>
