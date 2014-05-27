@@ -717,8 +717,8 @@
 					<alttexturenofocus>-</alttexturenofocus>
           <visible>!Container.Content(movies) | [Container.Content(movies) + !System.HasAddon(script.cinema.experience)] | [Container.Content(movies) + SubString(Container.FolderPath,plugin)]</visible>
 				</control>
-<<<<<<< HEAD
-				<control type="button" id="49">
+<!-- <<<<<<< HEAD -->
+				<!-- <control type="button" id="49">
 					 <description>Home Theatre</description>
 					 <include>ButtonInfoDialogsCommonValues</include>
 					 <label>Cinema</label>
@@ -726,18 +726,27 @@
 					 <onclick>XBMC.RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])</onclick>
 					 <visible>system.hasaddon(script.cinema.experience) + Container.Content(movies)</visible>
 				</control>
-				<control type="button" id="5">
-=======
-				<control type="button" id="80">
+				<control type="button" id="5"> -->
+<!-- ======= -->
+<!-- 				<control type="button" id="80">
 					<description>Play Cinema</description>
 				  <include>TopButton</include>
 					<label>208</label>
-          <onclick>Dialog.Close(MovieInformation)</onclick>
-          <onclick>XBMC.RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])</onclick>
-          <visible>System.HasAddon(script.cinema.experience) + Container.Content(movies) + !SubString(Container.FolderPath,plugin)</visible>
+				  <onclick>Dialog.Close(MovieInformation)</onclick>
+				  <onclick>XBMC.RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])</onclick>
+				  <visible>System.HasAddon(script.cinema.experience) + Container.Content(movies) + !SubString(Container.FolderPath,plugin)</visible>
+				</control> -->
+				
+				<control type="button" id="49">
+					 <description>Home Theatre</description>
+					 <include>TopButton</include>
+					 <label>208</label>
+					 <onclick>Dialog.Close(MovieInformation)</onclick>
+					 <onclick>XBMC.RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])</onclick>
+					 <visible>system.hasaddon(script.cinema.experience) + Container.Content(movies)</visible>
 				</control>
+				
 				<control type="button" id="105">
->>>>>>> upstream/master
 					<description>Cast/Plot</description>
 					<label>-</label>
           <onclick condition="IntegerGreaterThan(Container(50).NumItems,0)">SendClick(2003,5)</onclick>
@@ -792,18 +801,19 @@
 				<control type="label">
 					<description>Play Cinema</description>
 				  <include>TopSmallLabel</include>
-          <label>$INFO[Control.GetLabel(80)]</label>
-					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(80)" reversible="true">Conditional</animation>
-          <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(80)" reversible="true">Conditional</animation>
+          <!-- <label>$INFO[Control.GetLabel(80)]</label> -->
+		  <label>Cinema</label>
+					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(49)" reversible="true">Conditional</animation>
+					<animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(49)" reversible="true">Conditional</animation>
           <visible>System.HasAddon(script.cinema.experience) + Container.Content(movies) + !SubString(Container.FolderPath,plugin)</visible>
 				</control>
-					<control type="label">
+					<!-- <control type="label">
 					<description>Cinema Experience</description>
 					<include>TopSmallLabel</include>
 					<label>Cinema</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(49)" reversible="true">Conditional</animation>
 					<animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(49)" reversible="true">Conditional</animation>
-				</control>
+				</control> -->
 				<control type="label">
 					<description>Cast/Plot</description>
 				  <include>TopSmallLabel</include>

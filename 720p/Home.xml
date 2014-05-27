@@ -5,15 +5,10 @@
   <backgroundcolor>0</backgroundcolor>
 	<controls>
 		<include>BackgroundContent</include>
-<<<<<<< HEAD
-		<!-- <include>HomeBackground</include> -->
-		<include>RecentAndSkinWidgetsFanart</include>
-		<!--<include>BackgroundVignette</include>-->
-=======
 		<include>HomeCategoriesFanart</include>
 		<include>HomeSkinWidgetsFanart</include>
-		<include>BackgroundVignette</include>
->>>>>>> upstream/master
+		<!--<include>BackgroundVignette</include>-->
+
 		<!-- Main Home Menu Wraplist -->
 		<include>HomeMenuWraplist</include>
 	  <!-- Home Now Playing -->

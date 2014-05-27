@@ -26,13 +26,10 @@
           </control>					
 					<control type="wraplist" id="20">
 					 <description>Home Container</description>
-<<<<<<< HEAD
-					 <posx>-95</posx>
-					 <posy>400</posy>
-=======
+					 
 					 <left>-95</left>
-					 <posy>110</posy>
->>>>>>> upstream/master
+					 <posy>400</posy>
+					 
 					 <width>1500</width>
 					 <height>720</height>
 					 <align>center</align>
